@@ -52,6 +52,14 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="{{ url('/carrito') }}">
+                            Mi carrito
+                            <span class="circle-shopping-cart">
+                                {{ $productsCount }}
+                            </span>
+                        </a>
+                    </li>
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             <li><a href="{{ url('/login') }}">Login</a></li>

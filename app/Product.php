@@ -6,5 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    //
+    public function paypalItem()
+    {
+        //$product = Product::find($id);
+        return \PaypalPayment::item()->setName($this->title)
+                                     ->setDescription($this->description)
+                                     ->setCurrency('USD')
+                                     ->setQuantity(1)
+                                     ->setPrice($this->pricing / 100);
+    }
 }

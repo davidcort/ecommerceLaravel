@@ -1,0 +1,12 @@
+Products
+Mochos carritos de compras
+
+Tabla pivot
+Nombre InShoppingCart
+product_id
+shoping_cart_id
+
+ShoppingCart
+Muchos productos
+
+Relacion: N:N

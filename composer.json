@@ -6,8 +6,10 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "anouar/paypalpayment": "~1.0",
         "laravel/framework": "5.3.*",
-        "laravelcollective/html": "5.3.*@dev"
+        "laravelcollective/annotations": "^5.3.0",
+        "laravelcollective/html": "5.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
